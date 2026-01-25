@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Pizza Ordering Form</title>
+    </head>
+
+    <body>
+        <h1>Pizza Ordering Form</h1>
+
+        <h2>Contact Information</h2>
+        <form>
+            <label for="inName">Name:</label>
+            <input type="text" name="inName" id="inName" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+
+        <h2>Select Pizza Size</h2>
+            <label for="pizzaSize">Pizza Size:</label>
+            <select name="pizzaSize" id="pizzaSize" required>
+                <option value="">--Select Size--</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">XLarge</option>
+            </select>
+
+        <h2>Select Sauce</h2>
+            <input type="radio" name="sauce" id="marinara" value="marinara" required>
+            <label for="marinara">Marinara</label><br>
+
+            <input type="radio" name="sauce" id="alfredo" value="alfredo">
+            <label for="alfredo">Alfredo</label><br>
+
+            <input type="radio" name="sauce" id="ranch" value="ranch">
+            <label for="ranch">Ranch</label><br>
+
+            <input type="radio" name="sauce" id="bbq" value="bbq">
+            <label for="bbq">BBQ</label><br>
+
+            <input type="radio" name="sauce" id="noSauce" value="noSauce">
+            <label for="noSauce">No Sauce</label><br>
+
+        <h2>Select Toppings</h2>    
+            <input type="checkbox" name="topping" id="pineapple" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+
+            <input type="checkbox" name="topping" id="ham" value="ham">
+            <label for="ham">Ham</label><br>
+
+            <input type="checkbox" name="topping" id="sardines" value="sardines">
+            <label for="sardines">Sardines</label>
+
+            <input type="checkbox" name="topping" id="chicken" value="chicken">
+            <label for="chicken">Chicken</label><br>
+
+            <input type="checkbox" name="topping" id="onions" value="onions">
+            <label for="onions">Onions</label>
+
+            <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+
+        <h2>Additional Instructions</h2>
+            <textarea id="instructions" name="instructions" rows="4" cols="50">Add instructions</textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
+
+        <br><br>
+        <table border="1">
+        <caption>List of My Favorite Games</caption>
+            <thead>
+                <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>ConcernedApe</td>
+                    <td>Stardew Valley</td>
+                    <td>2016</td>    
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Game Freak</td>
+                    <td>Pokemon Mystery Dungeon: Rescue Team DX </td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <td>Pokemon Diamond Version</td>
+                    <td>2006</td>
+                </tr>
+
+                <tr>
+                    <td>OMOCAT, LLC</td>
+                    <td>Omori</td>
+                    <td>2020</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Count: 4</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </body>
+</html>
