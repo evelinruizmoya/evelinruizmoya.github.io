@@ -1,0 +1,132 @@
+/*The "jump menu" is positioned on the left, and spans the entire height of the page.*/
+#jumpMenu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 15%;
+  background-color:beige;
+
+  text-align: center;
+}
+
+#jumpMenu h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+
+    margin: 0;
+    padding: 30px 10px;
+}
+
+#jumpMenu a{
+  line-height: 4.0;
+}
+
+/*The "header" (e.g. MyBlog and buttons) is always on the top of the page, and they are unaffected by scrolling.*/
+/*The "header" is centered appropriately, i.e. it does not count space behind the jump menu when centering.*/
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 15%;
+  text-align: center;
+  padding: 0px;
+
+  background-color: rgb(187, 186, 186);
+}
+
+header p {
+    font-size: 26px;
+    
+}
+
+header nav {
+  display: flex;
+  background: black;
+  padding: 0;
+}
+
+header nav button {
+  width: 22%;
+  margin: 0 1.5%;
+  padding: 20px 0;
+  font-size: 24px;
+  color: white;
+  background: blue;
+  border: none;
+}
+
+
+/*The "thank you for visiting" block is always shown in the bottom-right of the page.*/
+ #thanks {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  width: 420px;
+  padding: 25px 25px;
+  margin: 0;
+
+  background-color: #d179d0;
+  border: 2px solid black;
+
+  font-size: 40px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+/*The journal articles are organized neatly in the main area of the page.*/
+/*If the window resizes, the journal articles will be reorganized.*/
+main {
+  margin-left: 10%;
+  padding-top: 140px;
+}
+
+h1 {
+  width: 85%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+#container {
+  margin-left: 15%;
+  width: 85%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#container article {
+  width: 300px;
+  
+ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  }
+
+footer {
+  margin-left: 15%;
+  text-align: center;
+  background-color: aqua;
+  margin: 0 1.5%;
+}
+
+footer address span {
+  display: inline;
+}
+
+footer address span:nth-child(2n)::after {
+  content: "\A";
+  white-space: pre;
+  display: block;
+}
+
+footer address a::after {
+  content:"\A";
+  white-space:pre;
+  display:block;
+}
