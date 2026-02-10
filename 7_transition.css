@@ -1,0 +1,147 @@
+/*side bar menu*/
+#menuItems {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 15%;
+    background-color: bisque;
+    text-align: center;
+}
+
+#menuItems button {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+}
+
+#menuItems button:hover {
+  background-color: goldenrod;
+}
+
+#jumpMenu {
+  display: none;
+  list-style-type: none;
+  background-color: goldenrod;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li a {
+    display: block;
+    padding: 3px 0;
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#jumpMenu li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/*thank you box*/
+ #thanks {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  width: 420px;
+  padding: 25px 25px;
+  margin: 0;
+
+  background-color: #7deea1;
+  border: 2px solid black;
+
+  font-size: 40px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+/*header portion*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 15%;
+    text-align: center;
+    padding: 0%;
+    background-color: brown;
+}
+
+header p {
+    font-size: 26pt;
+}
+
+/*body text*/
+main {
+  margin-left: 10%;
+  padding-top: 140px;
+}
+
+h1 {
+  width: 85%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+#container {
+  margin-left: 15%;
+  width: 85%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#container article {
+  width: 300px;
+  color: rgb(192, 192, 192);
+  transition: width 2s, color 2s;
+}
+
+#container article:hover {
+  color: rgb(0, 0, 0);
+  width: 360px;
+}
+
+#container article p:first-of-type::first-letter {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container article p:nth-of-type(2)::after {
+    content: url("arrow.png");
+}
+
+/*bottom of page*/
+footer {
+  margin-left: 15%;
+  text-align: center;
+  background-color: aqua;
+  margin: 0 1.5%;
+}
+
+footer address span {
+  display: inline;
+}
+
+footer address span:nth-child(2n)::after {
+  content: "\A";
+  white-space: pre;
+  display: block;
+}
+
+footer address a::after {
+  content:"\A";
+  white-space:pre;
+  display:block;
+}
