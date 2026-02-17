@@ -44,19 +44,16 @@ function showOddNumbers() {
 
 
 // Task 2
-// **Simple For Loop**
-
-
-
-// **Repetition with Condition**
-
-
-
-
 // **Arrays**
-
-
-
+function addMultiplesToArray() {
+    let arr = [];
+    for (let i = counter; i >= 5; i--) {
+        if (i % 5 === 0) {
+            arr.push(i);
+        }
+    }
+    console.log(arr);
+}
 
 // **Objects and Form Fields**
 
