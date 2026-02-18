@@ -1,49 +1,148 @@
 body {
-    background-color: rgb(239, 230, 242);
+  background-color: #cb9bca;
+  margin: 0;
+}
+
+.page {
+  background-color: rgb(239, 230, 242);
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 60px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.15);
 }
 
 h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 0;
-    letter-spacing: 3px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
+  letter-spacing: 3px;
 }
 
+h2 {
+  margin-top: 40px;
+}
 
 .title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    margin-top: 4px;
-    margin-bottom: 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
 
+address {
+  margin: 0;
 }
 
 .contact-bar {
   border-top: 1px solid #555;
-
-  padding: 10px 0;      /* space between bars */
-  margin: 18px 0 28px;  /* spacing around the whole bar */
+  margin: 10px 0 10px;
 }
 
 .contact {
-  margin: 0;            /* IMPORTANT: prevents text dropping below bar */
-  font-style: normal;   /* address default italics off */
-  text-align: center;
-
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  color: #333;
-
-  line-height: 1;       /* keeps text centered between lines */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 6px;
+  font-style: normal;
 }
 
-.contact a {
-  color: inherit;
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
   text-decoration: none;
+  color: inherit;
 }
 
-.contact a:hover {
+.contact-item:hover {
   color: #8A2C83;
+}
+
+.contact-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: auto max-content;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.entry-right {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.job-desc {
+  margin-top: 4px;
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+
+.job-desc li {
+  margin-bottom: 4px;
+}
+
+.projects a {
+  color: #5b2a86;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.projects a:visited {
+  color: #5b2a86;
+}
+
+.projects a:hover {
+  color: #8A2C83;
+}
+
+@media (max-width: 412px) {
+  .page {
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .contact-bar {
+    margin: 12px 0 18px;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-right {
+    text-align: left;
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    gap: 200px;
+  }
 }
