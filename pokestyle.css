@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #cebad0;
+}
+
+.page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px 50px;
+}
+
+.card {
+  background: #f3f3f3;
+  border: 8px solid #c8a2e5;
+  border-radius: 40px;
+  padding: 22px 24px;
+}
+
+.searchTitle {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.searchRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#query {
+  width: 360px;
+  height: 26px;
+  font-size: 16px;
+  padding: 2px 6px;
+  border: 2px solid #777;
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#findBtn {
+  width: 60px;
+  height: 33px;
+  font-size: 16px;
+  border: 2px solid #777;
+  background: #e6e6e6;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+#findBtn:active {
+  background: #d6d6d6;
+}
+
+.status {
+  min-height: 22px;
+  text-align: center;
+  margin: 4px 0 6px;
+}
+
+.pokemonArea {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin: 10px 0 8px;
+}
+
+.sprite {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.audio {
+  width: 60%;
+  min-width: 320px;
+}
+
+.movesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+  margin: 10px auto 6px;
+  max-width: 600px;
+}
+
+select {
+  height: 28px;
+  font-size: 16px;
+  padding: 2px 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+
+.teamList {
+  border: 2px solid #333;
+  background: #fff;
+}
+
+.teamRow {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  min-height: 110px;
+  border-top: 2px solid #333;
+  padding: 10px 14px;
+}
+
+.teamRow:first-child {
+  border-top: none;
+}
+
+.teamRow img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  justify-self: center;
+}
+
+.teamRow ul {
+  margin: 0;
+  padding-left: 26px;
+  font-size: 24px;
+  line-height: 1.15;
+}
